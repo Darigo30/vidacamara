@@ -1,0 +1,13 @@
+body{
+    box-sizing: border-box;
+}
+.bg-header{
+    background: url(/assets/img/bg-header.jpg) center no-repeat;
+    background-size: cover;
+    height: 693px;
+}
+.navbar {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}

@@ -1,0 +1,65 @@
+:root{
+    --body-color: #EBEBEB;
+    --color-orange: #F77D0C;
+    --color-white: #FFFFFF;
+    --color-grey: #606060;
+    --color-red: #E03C31;
+}
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('/assets/fonts/UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('/assets/fonts/Segoe UI Bold.woff') format('woff');
+}
+
+/*Basics*/
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI Regular';
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+h1, h2, h3{
+    text-transform: uppercase;
+}
+h1{
+    font-size: 56px;
+    color: var(--color-orange);
+    font-family: 'Segoe UI Bold;
+}
+h2{
+    font-size: 41px;
+    color: var(--color-white);
+    font-weight: normal;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 26px;
+}
+/*Header + Banner*/
+
+.bg-header{
+    background: url(/assets/img/bg-header.jpg) center no-repeat;
+    background-size: cover;
+    height: 690px;
+    display: flex;
+    align-items: center;
+}
+.navbar.navb {
+    position: absolute;
+    width: 100%;
+    margin-top: 25px;
+}

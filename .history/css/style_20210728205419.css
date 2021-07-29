@@ -1,0 +1,29 @@
+:root{
+    --body-color: #EBEBEB;
+}
+body{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('/assets/fonts/UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('/assets/fonts/Segoe UI Bold.woff') format('woff');
+}
+.bg-header{
+    background: url(/assets/img/bg-header.jpg) center no-repeat;
+    background-size: cover;
+    height: 690px;
+    display: flex;
+    align-items: center;
+}
+.navbar.navb {
+    position: absolute;
+    width: 100%;
+}

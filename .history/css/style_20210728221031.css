@@ -1,0 +1,135 @@
+:root{
+    --body-color: #EBEBEB;
+    --color-orange: #F77D0C;
+    --color-white: #FFFFFF;
+    --color-grey: #606060;
+    --color-red: #E03C31;
+    --color-par: #5A5B5F;
+}
+@font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('/assets/fonts/UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('/assets/fonts/Segoe UI Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe UI Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Black'), url('/assets/fonts/seguibl.woff') format('woff');
+}
+
+/*Basics*/
+
+body{
+    box-sizing: border-box;
+    font-family: 'Segoe UI Regular';
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-par);
+}
+h1, h3{
+    font-family: 'Segoe UI Bold';
+    text-transform: uppercase;
+}
+h1{
+    font-size: 56px;
+    color: var(--color-orange);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI Black';
+}
+h2{
+    font-size: 41px;
+    color: var(--color-white);
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+}
+h5{
+    font-size: 26px;
+}
+span{
+    color: var(--color-red);
+}
+/*Header + Banner*/
+
+.navbar.navb {
+    position: absolute;
+    width: 100%;
+    margin-top: 25px;
+}
+.bg-header{
+    background: url(/assets/img/bg-header.jpg) center no-repeat;
+    background-size: cover;
+    height: 690px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.form {
+    background: #00000061;
+    padding: 35px;
+    border-radius: 20px;
+}
+.form-control.br-f {
+   border: 1px solid var(--color-orange);
+   padding: 3px 25px 5px;
+}
+.btn.btn-grande{
+    background: var(--color-red);
+    border: none;
+    width: 100%;
+    border-radius: 15px;
+}
+.row.cont-form-text{
+    margin-top: 5%;
+}
+.seg {
+    background: white;
+    width: 25%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: 1px solid var(--color-red);
+    margin-top: 4%;
+}
+.bg-header::before{
+    content: '';
+    background: url(/assets/img/onda.png) bottom no-repeat;
+    background-size: auto;
+    background-size: auto;
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    z-index: 0;
+    bottom: -70px;  
+}
+/*Seccion seguro obligatorio*/
+
+.seguro::after{
+    content: '';
+    background: url(/assets/img/mascara.png) top right no-repeat;
+    background-size: auto;
+    background-size: auto;
+    background-size: 100%;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    z-index: 0;
+    bottom: -70px;  
+}

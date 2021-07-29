@@ -1,0 +1,14 @@
+body{
+    box-sizing: border-box;
+}
+.bg-header{
+    background: url(/assets/img/bg-header.jpg) center no-repeat;
+    background-size: cover;
+    height: 690px;
+    display: flex;
+    align-items: center;
+}
+.navbar.navb {
+    position: absolute;
+    width: 100%;
+}

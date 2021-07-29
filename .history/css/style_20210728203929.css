@@ -1,0 +1,6 @@
+body{
+    box-sizing: border-box;
+}
+.bg-header{
+    background: url(/assets/img/bg-header.jpg) center no-repeat;
+}
