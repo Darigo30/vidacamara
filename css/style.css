@@ -86,7 +86,7 @@ p {
 }
 
 .bg-header {
-  background: url(/assets/img/bg-header.jpg) center no-repeat;
+  background: url(assets/img/bg-header.jpg) center no-repeat;
   background-size: cover;
   height: 690px;
   display: flex;
