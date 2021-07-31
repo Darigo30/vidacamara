@@ -27,9 +27,7 @@
 }
 
 /*Basics*/
-html{
-  scroll-behavior: smooth;
-}
+
 body {
   box-sizing: border-box;
   font-family: "Segoe UI Regular";
@@ -83,70 +81,56 @@ p {
   display: flex;
   align-items: center;
   position: relative;
-  h1{
-    font-size: 54px;
-    width: 90%;
-    margin-top: 65px;
-  }
-  &__seg {
-    background: white;
-    width: 100%;
-    max-width: 270px;
-    position: absolute;
-    top: 30%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 10px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border: 1px solid var(--color-red);
-    margin-top: 4%;
-  }
-  &__form {
-    background: #00000061;
-    padding: 35px;
-    border-radius: 20px;
-    position: absolute;
-    width: 30%;
-    z-index: 15;
-    top: 100px;
-  }
-  .form-control.br-f {
-    border: 1px solid var(--color-orange);
-    padding: 3px 25px 5px;
-  }
-  .btn.btn-grande {
-    background: var(--color-red);
-    border: none;
-    width: 100%;
-    border-radius: 15px;
-  }
-  .row.cont-form-text {
-    margin-top: 5%;
-  }
 }
+.form {
+  background: #00000061;
+  padding: 35px;
+  border-radius: 20px;
+  position: absolute;
+  width: 20%;
+  z-index: 99;
+  top: 130px;
+}
+.form-control.br-f {
+  border: 1px solid var(--color-orange);
+  padding: 3px 25px 5px;
+}
+.btn.btn-grande {
+  background: var(--color-red);
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+}
+.row.cont-form-text {
+  margin-top: 5%;
+}
+.seg {
+  background: white;
+  width: 15%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 1px solid var(--color-red);
+  margin-top: 4%;
+}
+
 /*Seccion seguro obligatorio*/
 .mascara {
   position: absolute;
+  bottom: 130px;
   background: url(/assets/img/masc.svg) right no-repeat;
   background-size: auto;
   background-size: auto;
   background-size: 100%;
   width: 100%;
-  height: 100%;
+  height: 60%;
   z-index: 9;
+  background-size: cover;
   right: 0;
-  top: 190px;
-}
-.mascara-2 {
-  position: absolute;
-  background: url(/assets/img/masc-2.svg) right no-repeat;
-  background-size: 100%;
-  width: 100%;
-  height: 40%;
-  z-index: 9;
-  right: 0;
-  bottom: -40px;
 }
 .seguro-seccion{
   &__img-mujer {
@@ -155,11 +139,6 @@ p {
   &__icon-txt-cober {
     display: flex;
     align-items: start;
-  }
-  .psp-ab{
-    position: absolute;
-    right: 90px;
-    bottom: 90px;
   }
 }
 .seguro {
@@ -288,19 +267,18 @@ p {
   color: var(--color-white);
   position: fixed;
   right: 0;
-  width: 100%;
-  top: 60vh;
+  width: 15%;
+  top: 70vh;
   z-index: 13;
   padding: 10px;
-  border-top-left-radius: 20px;
+  border-top-left-radius: 35px;
   border: 1px solid #ECECEC;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 35px;
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
   font-family: 'Segoe UI Black';
   cursor: pointer;
-  max-width: 270px;
 }
 footer {
   background: #E18E00;
@@ -332,12 +310,8 @@ footer {
 }
 .modal-seguro{
   color: var(--color-grey);
-  padding: 30px 75px 50px;
   &__cont-modal{
     width: 60%;
-  }
-  &__re{
-    font-size: 14px;
   }
   &__circle{
     background: var(--color-orange);
@@ -362,14 +336,15 @@ footer {
     font-family: "Segoe UI Black";
   }
   p{
-    font-size: 14px;
-    line-height: 15px;
+    font-size: 12px;
   }
   &__btn-infor{
     width: 100%;
     max-width: 240px;
     background: var(--color-red);
     border: none;
+    margin: 0 auto;
+    display: block;
     border-radius: 35px;
     padding: 10px;
     color: var(--color-white);
@@ -381,159 +356,10 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
     color: var(--color-grey);
-    font-family: "Segoe UI Black";
-    line-height: 17px;
-    margin-top: 15px; 
     span{
       color: var(--color-orange);
+      font-family: "Segoe UI Black";
     }
-  }
-  &__bor{
-    border-right: 1px solid var(--color-grey);
-  }
-  &__pad{
-    padding: 0 55px!important;
-  }
-  &__borpy{
-    padding: 0 55px!important;
-  }
-  
-}
-.modal-dialog {
-  max-width: 814px!important;
-}
-.modal-header{
-  border-bottom: 0!important;
-}
-/*Medias querys*/
-@media (max-width: 1199px) {
-  .mascara{
-    top: 490px;
-    height: 30%;
-  }
-  .bg-header{
-    h1{margin-top: 145px;}
-  }
-  .seguro{
-    &__titulo{
-      display: block;
-      text-align: center;
-    }
-  }
-  .accordion{
-    h2{
-      font-size: 20px;
-    }
-  }
-  .seguro-seccion .psp-ab {
-    bottom: 45px;
-  }
-}
-@media (max-width: 991px){
-  .seguro{
-    margin-top: 30px;
-  }
-  footer{
-    li{
-      font-size: 14px;
-    }
-  }
-  .seguro-seccion{
-    .psp-ab{
-      position: initial;
-    }
-    h5{
-      padding-bottom: 0!important;
-    }
-  }
-  .mascara-2{
-    display: none;
-  }
-}
-@media (max-width: 767px){
-  .venta-asistida{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    top: initial;
-    right: 0;
-    left: 0;
-    max-width: 100%;
-    border-radius: 0px;
-  }
-  footer{
-    display: block;
-    margin: 0px auto;
-    text-align: center;
-    padding: 30px;
-    height: 300px;
-    ul{
-      display: block;
-      list-style: none; 
-    }
-    li:nth-child(1){
-      border-right: 0;
-      padding: 15px 0;
-    }
-    li:nth-child(3){
-      padding: 15px 0;
-      list-style: none;
-    }
-  }
-  .accordion{
-    h2{
-      font-size: 15px;
-      width: 244px;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-  }
-  .seguro{
-    &__titulo{
-      font-size: 20px;
-      line-height: 26px;
-    }
-  }
-  .seguro-seccion{
-    &__img-mujer{
-      width: 100%;
-    }
-    h5{
-      margin-top: 25px;
-      margin-bottom: 0;
-    }
-  }
-  .bg-header{
-    height: 100%;
-    &__form{
-      width: 100%;
-      position: initial;
-    }
-    &__seg{
-      display: none;
-    }
-    h1{
-      font-size: 34px;
-      margin-top: 0;
-    }
-  }
-  .navbar.navb{
-   position: initial;
-  }
-  .mascara, .mascara-2{
-    display: none;
-  }
-  .modal-seguro{
-    padding: 30px 0 50px;
-    &__bor{
-      border-right: 0;
-    }
-    &__borpy{
-      margin-bottom: 45px;
-    }
-  }
-  .seguro-seccion .psp-ab{
-    position: initial;
+
   }
 }

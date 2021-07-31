@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1776" height="467.852" viewBox="0 0 1776 467.852">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="99" y="42" width="1776" height="467.852" fill="none"/>
+    </clipPath>
+    <filter id="Trazado_69" x="-99" y="-42" width="1974" height="838.852" filterUnits="userSpaceOnUse">
+      <feOffset dy="-26" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feFlood flood-opacity="0.192"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_552" data-name="Grupo 552" transform="translate(-5111.989 -1393.157)">
+    <g id="Grupo_de_desplazamiento_1" data-name="Grupo de desplazamiento 1" transform="translate(5012.989 1351.157)" clip-path="url(#clip-path)" style="isolation: isolate">
+      <g transform="matrix(1, 0, 0, 1, 99, 42)" filter="url(#Trazado_69)">
+        <path id="Trazado_69-2" data-name="Trazado 69" d="M506.469,675.348s105.786-245.093,515.137-255.234,686.273,156.29,1068.729-91.839,334.172-215.116,334.172-215.116V896.552H506.469Z" transform="translate(-578.47 -100.7)" fill="#ebebeb"/>
+      </g>
+    </g>
+  </g>
+</svg>

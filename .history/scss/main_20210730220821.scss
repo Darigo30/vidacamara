@@ -143,7 +143,7 @@ p {
   background: url(/assets/img/masc-2.svg) right no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 40%;
+  height: 30%;
   z-index: 9;
   right: 0;
   bottom: -40px;
@@ -198,6 +198,19 @@ p {
 /*Acoordion*/
 .accoo-inf{
   margin: 40px 0 40px;
+}
+.mascara2{
+  position: absolute;
+  bottom: 0;
+  background: url(/assets/img/masc-2.svg) no-repeat;
+  background-size: auto;
+  background-size: auto;
+  background-size: 100%;
+  width: 100%;
+  height: 40%;
+  z-index: 9;
+  background-size: cover;
+  right: 0;
 }
 .accordion {
   cursor: pointer;
@@ -445,9 +458,6 @@ footer {
     h5{
       padding-bottom: 0!important;
     }
-  }
-  .mascara-2{
-    display: none;
   }
 }
 @media (max-width: 767px){
