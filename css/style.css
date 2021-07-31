@@ -86,7 +86,7 @@ p {
 }
 
 .bg-header {
-  background: url(assets/img/bg-header.jpg) center no-repeat;
+  background: url(../assets/img/bg-header.jpg) center no-repeat;
   background-size: cover;
   height: 690px;
   display: flex;
@@ -138,7 +138,7 @@ p {
 /*Seccion seguro obligatorio*/
 .mascara {
   position: absolute;
-  background: url(/assets/img/masc.svg) right no-repeat;
+  background: url(../assets/img/masc.svg) right no-repeat;
   background-size: auto;
   background-size: auto;
   background-size: 100%;
@@ -151,7 +151,7 @@ p {
 
 .mascara-2 {
   position: absolute;
-  background: url(/assets/img/masc-2.svg) right no-repeat;
+  background: url(../assets/img/masc-2.svg) right no-repeat;
   background-size: 100%;
   width: 100%;
   height: 40%;
